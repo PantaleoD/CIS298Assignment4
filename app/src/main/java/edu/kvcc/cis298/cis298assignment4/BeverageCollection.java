@@ -43,6 +43,10 @@ public class BeverageCollection {
         loadBeverageList();
     }
 
+    public void setBeverages(List<Beverage> beverages) {
+        mBeverages = beverages;
+    }
+
     //Getters
     public List<Beverage> getBeverages() {
         return mBeverages;

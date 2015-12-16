@@ -1,6 +1,7 @@
 package edu.kvcc.cis298.cis298assignment4;
 
 import android.content.Intent;
+import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
@@ -15,8 +16,7 @@ import java.text.NumberFormat;
 import java.util.List;
 
 /**
- * Created by David Barnes on 11/3/2015.
- */
+ * Created by David Barnes on 11/3/2015. */
 public class BeverageListFragment extends Fragment {
 
     //Private variables for the recycler view and the required adapter
@@ -67,6 +67,16 @@ public class BeverageListFragment extends Fragment {
             mBeverageAdapter.notifyDataSetChanged();
         }
     }
+
+    private void setupAdapter() {                    // added w/ JSON use
+        if (isAdded()) {
+            BeverageCollection collection = BeverageCollection.get(getActivity());
+
+            mBeverageAdapter = new BeverageAdapter(collection.getBeverages());
+            mBeverageRecyclerView.setAdapter(mBeverageAdapter);
+        }
+    }
+
 
     //Private class that is required to get a recyclerview working
     private class BeverageHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
@@ -151,4 +161,22 @@ public class BeverageListFragment extends Fragment {
             return mBeverages.size();
         }
     }
+
+    // ***************** for JSON use **********************
+
+    private class FetchBeverageTask extends AsyncTask<Void, Void, List<Beverage>> {
+        protected List<Beverage> doInBackground(Void... voids) {   // auto called when doInBackground done
+            return new BeverageFetcher().fetchBeverages();
+        }
+        @Override
+        protected void onPostExecute(List<Beverage> beverages){
+            BeverageCollection beverageCollection = BeverageCollection.get(getActivity());
+            beverageCollection.setBeverages(beverages);
+
+            setupAdapter();
+        }
+    }
 }
+
+
+

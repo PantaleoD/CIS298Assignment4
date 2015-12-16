@@ -1,8 +1,7 @@
 package edu.kvcc.cis298.cis298assignment4;
 
 /**
- * Created by David Barnes on 11/3/2015.
- */
+ * Created by David Barnes on 11/  2015. */
 public class Beverage {
 
     //Private member variables for the model

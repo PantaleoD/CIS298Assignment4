@@ -2,6 +2,11 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="edu.kvcc.cis298.cis298assignment4" >
 
+    <!-- ADDED IN ORDER TO USE THE INTERNET - CH 23 Pg 411  -->
+     <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"

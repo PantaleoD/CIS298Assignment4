@@ -15,4 +15,28 @@
     <string name="beverage_pack_hint">Item Pack</string>
     <string name="beverage_price_hint">Item Price</string>
 
+    <!--      strings for contact, email  buttons and strings to display email messages -->
+    <string name="select_contact_text">Select Contact</string>
+    <string name="send_email_text">Send Email</string>
+
+    <!--      strings for email: From, To, Subj, Message resp -->
+    <string name="email_from_address">%1$s</string>
+    <string name="email_to_address">%1$s</string>
+
+    <string name="email_subject">Beverage App Item Information</string>
+    <string name="email_body">
+        %1$s
+
+        Please Review the Following Beverage
+
+        %2$s
+        %3$s
+        %4$s
+        %5$s
+        %6$s</string>
+
+    <string name="email_failure">we are sorry but your email cannot be sent - try again later </string>
+
+    <string name="email_chooser_message">Send An Email About a Beverage!</string>
+
 </resources>

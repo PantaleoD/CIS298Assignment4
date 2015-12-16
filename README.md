@@ -1,12 +1,12 @@
 # Assignment 4 - Add Implicit Intents and HTTP data loading to Beverage app.
 
-## Author
+## Author  Dawn Pantaleo - NOTES IN CAPS AND MOSTLY UNDER THE KNOWN PROBLEMS, ETC....
 
 
+## Description  I USED YOUR VERSION...GOT CONNECTED WITH THE JSON..GOT THE BUTTONS... THEN CRASHED AND BURNED....
 
-## Description
-
-This assignment will require you to either update my version of assignment 3, or your own version. This repository comes with my finished version of assignment 3. If you would rather use your version, you must replace all of the files in this project with your files. This way you can still make a pull request to submit the assignment.
+This assignment will require you to either update my version of assignment 3, or your own version.   
+This repository comes with my finished version of assignment 3. If you would rather use your version, you must replace all of the files in this project with your files. This way you can still make a pull request to submit the assignment.
 
 Once a user is on the detail page for a beverage item, there should be two additional buttons added that can be pressed. A Select Contact Button, and a Send Email button. The Select Contact button will allow a user to select a contact from the contacts application. The Send Email button will allow the user to send an email to the contact that was selected.
 
@@ -68,12 +68,20 @@ Setup a SQLite database to maintain the information for the Beverages. When the 
 
 The application must do all of the above work to get the extra credit. In order to satisfy the web service grading part of the assignment, the application must either load the Beverage data from the web service when the application starts up (no database), or load the Beverage data when the database is created (with database). If there is no web service functionality for one of those two features, then you can not get any points for that section of grading.
 
-## Outside Resources Used
+## Outside Resources Used  DIDN"T EVEN TRY THIS... ALTHOUGH IT SEEMED EASIER IN A WAY...MAYBE BECAUSE I"VE DONE SQL I"M NOT SURE. 
 
 
 
 ## Known Problems, Issues, And/Or Errors in the Program
+ALL THE PARTS ARE THERE BUT THEY ARE SO NOT CONNECTED....DID UP TO LAST WED'S (12/9) CLASS AND IT WORKED WELL.  STARTED THE 12/9 WORK WHEN I GOT SICK
+AND IT'S NOT FINISHED. I EVEN TRIED TO CHANGE SOMETHING EASY IT COULDN'T SO, RATHER THAN TOTALLY BREAK IT...I'VE LEFT IT ALONE FOR NOW.
 
+IT IS WAS IT IS :)
+
+THANKS FOR ALL YOUR HELP THIS SEMESTER. I SAW VAST IMPROVEMENT IN YOUR TEACHING AS THE SEMESTER PROGRESSED..YOU ARE A NATURAL AT THIS !
+GREAT JOB AND THANKS !!!
+
+ -DAWN
 
 
 # Original Assignment README
